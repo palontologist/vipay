@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../styles/globals.css'; // Ensure this line is present
 import '@rainbow-me/rainbowkit/styles.css';
 import type { AppProps } from 'next/app';
 
@@ -9,7 +9,7 @@ import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { ChakraProvider } from '@chakra-ui/react';
 
 const config = getDefaultConfig({
-  appName: 'did-app',
+  appName: 'vipay',
   projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_ID || '',
   chains: [polygonZkEvmCardona],
   ssr: true,
